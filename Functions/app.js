@@ -93,7 +93,8 @@ const throttled = mythrottle(() => {
 
 btn.addEventListener("click", () => {
     btnPress.innerHTML = ++pressedCount
-    throlledCount()
+    
+
 })
 
 
