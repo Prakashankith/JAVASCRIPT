@@ -81,3 +81,25 @@ async function loadJson(url) {
         console.log(err);
     })
 }
+
+
+let p1 = new Promise((res, rej) => {
+    res("hi i am resolve 1")
+    rej("hi i am reject 1")
+})
+let p2 = new Promise((res, rej) => {
+    res("hi i am resolve 2")
+    rej("hi i am reject 2")
+})
+let p3 = new Promise((res, rej) => {
+    res("hi i am resolve 3")
+    rej("hi i am reject 3")
+})
+let p4 = new Promise((res, rej) => {
+    res("hi i am resolve 4")
+    rej("hi i am reject 4")
+})
+let p5 = new Promise((res, rej) => {
+    res("hi i am resolve 5")
+    rej("hi i am reject 5")
+})
