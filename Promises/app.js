@@ -103,3 +103,4 @@ let p5 = new Promise((res, rej) => {
     res("hi i am resolve 5")
     rej("hi i am reject 5")
 })
+Promise.all()
