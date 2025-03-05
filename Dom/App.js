@@ -23,17 +23,67 @@
 // console.log(h1.getAttribute('id'));
 // h1.setAttribute("verfied", 'notverfied')
 
-console.log("2" + 3 * 2);
-function hi() {
-    return "hello baby"
-}
-console.log(typeof hi());
+// console.log("2" + 3 * 2);
+// function hi() {
+//     return "hello baby"
+// }
+// console.log(typeof hi());
 
 
-const buttons = document.querySelectorAll('button')
+// const buttons = document.querySelectorAll('button')
 
-buttons.forEach(button => {
-    button.addEventListener("click", (event) => {
-        console.log(event.target.innerText)
-    })
-})
+// buttons.forEach(button => {
+//     button.addEventListener("click", (event) => {
+//         console.log(event.target.innerText)
+//     })
+// })
+
+
+// function add(a, b) {
+//     return a + b
+// }
+// setTimeout(add, 2000)
+// console.log(add(20, 50));
+
+// function demo() {
+//     console.log('hello world');
+// }
+// // setTimeout(demo, 2000)
+// setInterval(demo, 5000)
+
+
+// let date = new Date()
+// console.log(date);
+// console.log(date.getDay());
+// console.log(date.getHours());
+
+let ls = localStorage
+console.log(ls);
+ls.setItem("sname", "miller")
+ls.setItem("age", 25)
+
+
+let ss = sessionStorage
+console.log(ss);
+ss.setItem("name", "ankith")
+console.log(ss.removeItem("name"));
+console.log(ss.getItem("name"));
+
+
+const text = '{ "name": "ankith", "age": 30, }'
+const obj = JSON.stringify(text)
+console.log(obj);
+
+
+
+console.log(!![]);
+console.log(!!{});
+console.log(!!!!"");
+console.log(!null);
+console.log(!!"welcome");
+console.log(!!NaN);
+
+console.log(!!Infinity);
+
+
+
