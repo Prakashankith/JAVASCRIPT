@@ -84,7 +84,7 @@ async function loadJson(url) {
 
 
 let p1 = new Promise((res, rej) => {
-    res("hi i am resolve 1")
+    // res("hi i am resolve 1")
     rej("hi i am reject 1")
 })
 let p2 = new Promise((res, rej) => {
@@ -100,7 +100,18 @@ let p4 = new Promise((res, rej) => {
     rej("hi i am reject 4")
 })
 let p5 = new Promise((res, rej) => {
-    res("hi i am resolve 5")
+    // res("hi i am resolve 5")
     rej("hi i am reject 5")
 })
-Promise.all()
+// Promise.all([p1, p2, p3, p4, p5]).then((result) => {
+//     console.log(result);
+// }).catch((error) => {
+//     console.log(error);
+
+// })
+Promise.allSettled([p1, p2, p3, p4, p5]).then((result) => {
+    console.log(result);
+}).catch((error) => {
+    console.log(error);
+
+})
