@@ -129,3 +129,37 @@ inc()
 setTimeout(log, 0);
 inc();
 console.log(count);
+
+
+function addition(a, b, callback) {
+    callback(a, b)
+}
+addition(10, 20, function (x, y) {
+    console.log(x + y);
+})
+
+let e = 4
+let f = 2
+let g = e++ * ++f + f++
+console.log(g);
+
+
+let z = 8
+console.log(++z / z++);
+
+let x = 7
+console.log(--x * ++x);
+
+var q = 151
+console.log(q++);
+console.log(++q);
+console.log(--q);
+console.log(q--);
+
+let m = 151
+console.log(m++);
+console.log(++m);
+console.log(--m);
+console.log(m--);
+
+
