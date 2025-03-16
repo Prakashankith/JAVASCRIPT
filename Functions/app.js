@@ -98,68 +98,122 @@
 // })
 
 
-function abc() {
-    console.log(abc.xyz);
-}
-abc()
-abc.xyz = 100
-abc.xyz = 200
-abc()
-console.log(typeof typeof 100);
-const arr = [...'Praveen']
-console.log(arr);
+// function abc() {
+//     console.log(abc.xyz);
+// }
+// abc()
+// abc.xyz = 100
+// abc.xyz = 200
+// abc()
+// console.log(typeof typeof 100);
+// const arr = [...'Praveen']
+// console.log(arr);
 
-console.log(parseInt('10-2'));
-console.log(parseInt('7FM'));
-console.log(parseInt('M7F'));
+// console.log(parseInt('10-2'));
+// console.log(parseInt('7FM'));
+// console.log(parseInt('M7F'));
 
-console.log([1, 2].map(num => {
-    if (num > 0) return;
-    return num * 2
-}));
+// console.log([1, 2].map(num => {
+//     if (num > 0) return;
+//     return num * 2
+// }));
 
-console.log([] + {});
-console.log({} + []);
-
-
-let count = 0
-const inc = () => count++
-const log = () => console.log(count);
-inc()
-setTimeout(log, 0);
-inc();
-console.log(count);
+// console.log([] + {});
+// console.log({} + []);
 
 
-function addition(a, b, callback) {
-    callback(a, b)
-}
-addition(10, 20, function (x, y) {
-    console.log(x + y);
+// let count = 0
+// const inc = () => count++
+// const log = () => console.log(count);
+// inc()
+// setTimeout(log, 0);
+// inc();
+// console.log(count);
+
+
+// function addition(a, b, callback) {
+//     callback(a, b)
+// }
+// addition(10, 20, function (x, y) {
+//     console.log(x + y);
+// })
+
+// let e = 4
+// let f = 2
+// let g = e++ * ++f + f++
+// console.log(g);
+
+
+// let z = 8
+// console.log(++z / z++);
+
+// let x = 7
+// console.log(--x * ++x);
+
+// var q = 151
+// console.log(q++);
+// console.log(++q);
+// console.log(--q);
+// console.log(q--);
+
+// let m = 151
+// console.log(m++);
+// console.log(++m);
+// console.log(--m);
+// console.log(m--);
+
+// let x = "5";
+// let y = x++ + ++x
+// console.log(x, y);
+
+// let m = "7"
+// let n = m++ + ++m
+// console.log(m, n);
+
+
+// let a = { value: 10 }
+// let b = a;
+// b.value = 20
+// console.log(a.value, b.value);
+// b = { value: 30 }
+// console.log(a.value, b.value);
+
+
+// let array = [10, 20, 30, 40]
+// let result = array.some((m) => {
+//     return m > 10
+// })
+// console.log(result);    
+
+
+// ?Remove duplicates from an array
+
+const array = [1, 4, 5, "Banana", 6, 1, 4, 4, 9, 3, "Banana"];
+const uniqueElements = array.filter((Element, index) => {
+    return array.indexOf(Element) === index
 })
-
-let e = 4
-let f = 2
-let g = e++ * ++f + f++
-console.log(g);
+console.log(uniqueElements);
 
 
-let z = 8
-console.log(++z / z++);
+function fibonacci(length) {
+    const fibArray = [0, 1];
 
-let x = 7
-console.log(--x * ++x);
-
-var q = 151
-console.log(q++);
-console.log(++q);
-console.log(--q);
-console.log(q--);
-
-let m = 151
-console.log(m++);
-console.log(++m);
-console.log(--m);
-console.log(m--);
+    for (let i = 2; i < length; i++) {
+        fibArray.push(fibArray[i - 1] + fibArray[i - 2])
+    }
+    return fibArray
+}
+const series = fibonacci(7)
+console.log(series);
 
 
+let string = "typescript";
+let reversedString = string.split('').reverse().join('');
+console.log(reversedString);
+
+let string1 = "javascript"
+let reversedString1 = '';
+for (let index = string.length - 1; index >= 0; index--) {
+    reversedString1 += string1[index]
+}
+console.log(reversedString1);
